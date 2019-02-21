@@ -6,30 +6,48 @@ class App extends Component {
   constructor(props){
     super(props);
 
-    this.state={
+    this.state = {
       active: 'Home',
     };
   }
 
-  
+  clicked(menu){
+    //untuk memperbarui state sesuai dengan menu yang dipilih
+    this.setState({
+      active: menu,
+    });
+  }
 
   render() {
     return (
+
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/*map akan loop sebanyak menu yang di definisikan*/}
+      {/* kemudian mengembalikan elemen </a> */}
+      
+      <nav className="nav">{ this.props.items.map ((menu, index) => {
+        var style = 'menu';
+        
+        if (this.state.active === menu){
+          style = `${style} is-active}`;
+        }
+
+        return <a className={style}
+          //bind untuk membuat 'menu' bisa dikirim ke fungsi 'clicked'
+          onClick={this.clicked.bind(this,menu)}
+          key={index}
           >
-            Learn React
-          </a>
-        </header>
+          {menu}
+          </a>;
+
+      })  }
+      
+      </nav>
+
+        <div className="info">
+          ini adalah <span className="selected">{this.state.active}</span>
+        </div>
+        
       </div>
     );
   }
