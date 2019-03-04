@@ -7,17 +7,34 @@ class App extends Component {
     super(props);
 
     this.state = {
-      active: 'Home',
+      color: 'Merah',
+      img   : 'apple.jpg',
     };
   }
 
   clicked(menu){
     //untuk memperbarui state sesuai dengan menu yang dipilih
+    
     this.setState({
-      active: menu,
+      color : menu.color,
+      img   : menu.img,
     });
   }
+  /* gambarku(){
+    var gambar;
+    if (this.state.active.toLocaleLowerCase()==='merah'){
+      gambar = "apel";
+    } else if (this.state.active.toLocaleLowerCase()=== 'kuning' ){
+      gambar ="nanas";
+    } else if (this.state.active.toLocaleLowerCase() === 'hijau'){
+      gambar ="alpukat";
+    } else if (this.state.active.toLocaleLowerCase() === 'biru'){
+      gambar ="berry";
+    }
 
+    return <img src={gambar+".jpg"} width="200"></img>
+  }
+*/
   render() {
     return (
 
@@ -25,19 +42,22 @@ class App extends Component {
       {/*map akan loop sebanyak menu yang di definisikan*/}
       {/* kemudian mengembalikan elemen </a> */}
       
-      <nav className="nav">{ this.props.items.map ((menu, index) => {
+      <nav className="nav">
+      { this.props.items.map ((menu, index) => {
         var style = 'menu';
         
-        if (this.state.active === menu){
-          style = `${style} is-active}`;
+        if (this.state.color === menu.color){
+          style = `${style} is-active`;
         }
 
-        return <a className={style}
+        return <a 
+          className={style+" "+menu.color}
+
           //bind untuk membuat 'menu' bisa dikirim ke fungsi 'clicked'
           onClick={this.clicked.bind(this,menu)}
           key={index}
           >
-          {menu}
+          {menu.color}
           </a>;
 
       })  }
@@ -45,7 +65,12 @@ class App extends Component {
       </nav>
 
         <div className="info">
-          ini adalah <span className="selected">{this.state.active}</span>
+          {/*ini adalah <span className={"selected " + this.state.active}> {this.state.active}</span>
+          <br/> 
+          <br/>
+          {this.gambarku()}
+          */}
+
         </div>
         
       </div>

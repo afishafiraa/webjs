@@ -78,8 +78,42 @@ a:hover {
   background: #ddd;
 }
 
+/*
 .menu.is-active {
   background: #ddd;
+}
+*/
+
+.merah.is-active {
+  background: rgb(240, 0, 0);
+}
+
+.merah.selected {
+  background: rgb(240, 0, 0);
+}
+
+.kuning.is-active {
+  background: rgb(255, 217, 0);
+}
+
+.kuning.selected {
+  background: rgb(255, 217, 0);
+}
+
+.hijau.is-active {
+  background: rgb(21, 255, 0);
+}
+
+.hijau.selected {
+  background: rgb(21, 255, 0);
+}
+
+.biru.is-active {
+  background: rgb(0, 102, 255);
+}
+
+.biru.selected {
+  background: rgb(0, 102, 255);
 }
 
 .info {
