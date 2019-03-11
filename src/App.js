@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       color: 'Merah',
       img   : 'apple.jpg',
+      title : 'Apel',
     };
   }
 
@@ -18,6 +19,7 @@ class App extends Component {
     this.setState({
       color : menu.color,
       img   : menu.img,
+      title : menu.title,
     });
   }
   /* gambarku(){
@@ -57,18 +59,20 @@ class App extends Component {
           onClick={this.clicked.bind(this,menu)}
           key={index}
           >
-          {menu.color}
+          {menu.title}   
           </a>;
-
+          //judul pada menu
       })  }
       
       </nav>
 
         <div className="info">
-          {/*ini adalah <span className={"selected " + this.state.active}> {this.state.active}</span>
+          ini adalah <span className={"selected " + this.state.color}> {this.state.title}</span>
           <br/> 
           <br/>
-          {this.gambarku()}
+
+          <img src={this.state.img} width="200"></img>
+          {/*this.gambarku()}
           */}
 
         </div>
