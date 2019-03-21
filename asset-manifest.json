@@ -1,14 +1,14 @@
 {
-  "main.css": "/afishafiraa/afishafiraa.github.io/static/css/main.7e2649d0.chunk.css",
-  "main.js": "/afishafiraa/afishafiraa.github.io/static/js/main.ff5a9da9.chunk.js",
-  "main.js.map": "/afishafiraa/afishafiraa.github.io/static/js/main.ff5a9da9.chunk.js.map",
-  "runtime~main.js": "/afishafiraa/afishafiraa.github.io/static/js/runtime~main.f538218e.js",
-  "runtime~main.js.map": "/afishafiraa/afishafiraa.github.io/static/js/runtime~main.f538218e.js.map",
-  "static/js/2.6f6b556b.chunk.js": "/afishafiraa/afishafiraa.github.io/static/js/2.6f6b556b.chunk.js",
-  "static/js/2.6f6b556b.chunk.js.map": "/afishafiraa/afishafiraa.github.io/static/js/2.6f6b556b.chunk.js.map",
-  "index.html": "/afishafiraa/afishafiraa.github.io/index.html",
-  "precache-manifest.51c4a55c0bd9a0a3bad7ab82d8397760.js": "/afishafiraa/afishafiraa.github.io/precache-manifest.51c4a55c0bd9a0a3bad7ab82d8397760.js",
-  "service-worker.js": "/afishafiraa/afishafiraa.github.io/service-worker.js",
-  "static/css/main.7e2649d0.chunk.css.map": "/afishafiraa/afishafiraa.github.io/static/css/main.7e2649d0.chunk.css.map",
-  "static/media/logo.svg": "/afishafiraa/afishafiraa.github.io/static/media/logo.5d5d9eef.svg"
+  "main.css": "/webjs/static/css/main.7e2649d0.chunk.css",
+  "main.js": "/webjs/static/js/main.ff5a9da9.chunk.js",
+  "main.js.map": "/webjs/static/js/main.ff5a9da9.chunk.js.map",
+  "runtime~main.js": "/webjs/static/js/runtime~main.81c01f9c.js",
+  "runtime~main.js.map": "/webjs/static/js/runtime~main.81c01f9c.js.map",
+  "static/js/2.6f6b556b.chunk.js": "/webjs/static/js/2.6f6b556b.chunk.js",
+  "static/js/2.6f6b556b.chunk.js.map": "/webjs/static/js/2.6f6b556b.chunk.js.map",
+  "index.html": "/webjs/index.html",
+  "precache-manifest.9591e46198be2b73c91529eee2e58158.js": "/webjs/precache-manifest.9591e46198be2b73c91529eee2e58158.js",
+  "service-worker.js": "/webjs/service-worker.js",
+  "static/css/main.7e2649d0.chunk.css.map": "/webjs/static/css/main.7e2649d0.chunk.css.map",
+  "static/media/logo.svg": "/webjs/static/media/logo.5d5d9eef.svg"
 }

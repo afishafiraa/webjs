@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/afishafiraa/afishafiraa.github.io/precache-manifest.51c4a55c0bd9a0a3bad7ab82d8397760.js"
+  "/webjs/precache-manifest.9591e46198be2b73c91529eee2e58158.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/afishafiraa/afishafiraa.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/webjs/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
